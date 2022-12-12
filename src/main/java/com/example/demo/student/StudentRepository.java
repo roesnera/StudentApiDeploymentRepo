@@ -1,2 +1,6 @@
-package com.example.demo.student;public interface StudentRepository {
+package com.example.demo.student;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface StudentRepository extends CrudRepository<Student, Integer> {
 }
